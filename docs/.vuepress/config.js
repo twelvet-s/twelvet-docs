@@ -2,6 +2,7 @@ const moment = require('moment');
 
 
 module.exports = {
+    // theme: 'reco',
     title: 'TwelveT',
     base: '/docs/',
     plugins: {
@@ -34,7 +35,7 @@ module.exports = {
         ['link', { rel: 'icon', href: "/assets/favicon.ico" }]
     ],
     themeConfig: {
-        lastUpdated: '最后更新时间',
+        lastUpdated: 'Last Updated',
         nav: [
             { text: '微服务', link: '/twelvet/' },
             {
@@ -61,8 +62,15 @@ module.exports = {
         //     clientSecret: 'YOUR_CLIENT_SECRET',
         // },
         // 项目开始时间，只填写年份
-        docsRepo: 'twelvet-s/twelvet',
-        editLinkText: '帮助我们改善此页面！',
+        // 开启GitHub编辑
+        editLinks: true,
+        docsRepo: 'twelvet-s/twelvet-docs',
+        editLinkText: '在GitHub上编辑此页',
+        // 文件目录
+        docsDir: 'docs',
+        // 自定义仓库链接文字。默认从 `themeConfig.repo` 中自动推断为
+        // "GitHub"/"GitLab"/"Bitbucket" 其中之一，或是 "Source"。
+        repoLabel: '查看源码',
         startYear: '2019',
         friendLink: [
             {
