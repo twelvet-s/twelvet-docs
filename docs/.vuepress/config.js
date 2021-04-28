@@ -13,6 +13,11 @@ module.exports = {
                 return moment(timestamp).fromNow()
             }
         },
+        // 跟随移动侧边栏
+        '@vuepress/active-header-links': {
+            sidebarLinkSelector: '.sidebar-link',
+            headerAnchorSelector: '.header-anchor'
+        },
         // 返回顶部
         '@vuepress/back-to-top': {},
         '@vuepress/medium-zoom': {},
