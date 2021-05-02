@@ -20,13 +20,13 @@ sentinel >= 1.6.0
 
 2、导入到`Idea`，此处省略。
 
-`3、创建数据库`twelvet并导入数据脚本`twelvet.sql`（必须），
+3、创建数据库`twelvet`并导入数据脚本`twelvet.sql`<font color='red'>（必须）</font>
 
-4、创建数据库twelvet_job并导入twelvet_job.sql（可选）`
+4、创建数据库`twelvet_job`并导入`twelvet_job.sql`（可选）
 
-`4、创建数据库`nacos`并导入数据脚本`twelvet_nacos.sql`（必须）`
+4、创建数据库`nacos`并导入数据脚本`twelvet_nacos.sql`<font color='red'>（必须）</font>
 
-`5、配置`nacos`持久化，修改`conf/application.properties`文件，增加支持`mysql`数据源配置
+5、配置`nacos`持久化，修改`conf/application.properties`文件，增加支持`mysql`数据源配置
 
 ```yml
 # db mysql
@@ -40,13 +40,14 @@ db.password=password
 提示
 
 配置文件`application.properties`是在下载的`nacos-server`包`conf`目录下。
- 默认配置单机模式，`nacos`也集群/多集群部署模式参考 ([Nacos支持三种部署模式 (opens new window)](https://nacos.io/zh-cn/docs/deployment.html))
+
+默认配置单机模式<font color='red'>（注意更改启动参数为set MODE="standalone"）</font>，`nacos`集群/多集群部署模式参考 ([Nacos支持三种部署模式 (opens new window)](https://nacos.io/zh-cn/docs/deployment.html))
 
 6、打开运行基础模块（启动没有先后顺序）
 
-- TWTGatewayApp （网关模块 必须）
-- TWTAuthApp    （认证模块 必须）
-- TWTSystemApp  （系统模块 必须）
+- TWTGatewayApp （网关模块 <font color='red'>必须</font>）
+- TWTAuthApp    （认证模块 <font color='red'>必须</font>）
+- TWTSystemApp  （系统模块 <font color='red'>必须</font>）
 - TWTMonitorApp （监控中心 可选）
 - TWTGenApp     （代码生成 可选）
 - TWTJobApp     （定时任务 可选）
@@ -54,13 +55,15 @@ db.password=password
 
 7、集成`seata`分布式事务（可选配置，默认不启用）
 
-创建数据库`twelvet-seata`并导入数据脚本`twelvet-seata`.sql`
+创建数据库`twelvet-seata`并导入数据脚本`twelvet-seata.sql`
 
 [参考集成nacos配置中心(等待更新)](https://www.twelvet.cn/docs/twelvet/deploy.html#运行系统)
 
 提示
 
-运行前需要先启动`nacos`，运行成功可以通过([http://localhost:88](http://localhost:88))访问，但是不会出现静态页面，可以继续参考下面步骤部署`twelvet-ui`前端，然后通过前端地址来访问。
+运行前需要先启动`nacos`，运行成功可以通过([http://localhost:88](http://localhost:88))访问API
+
+继续参考下面步骤部署`twelvet-ui`前端，然后通过前端地址来访问。
 
 ### 前端运行
 
@@ -75,7 +78,7 @@ npm install
 npm install --registry=https://registry.npm.taobao.org
 
 # 本地开发 启动项目
-npm run dev
+npm start
 ```
 
 4、打开浏览器，输入：([http://localhost:8000](http://localhost:8000)) 默认账户/密码 `admin/123456）
@@ -91,20 +94,19 @@ git clone https://github.com/twelvet-s/twelvet
 
 因为本项目是前后端完全分离的，所以需要前后端都单独启动好，才能进行访问。
 
-前端安装完node后，最好设置下淘宝的镜像源，不建议使用cnpm（可能会出现奇怪的问题）
+前端安装完Node后，最好设置下淘宝的镜像源，不建议使用cnpm（可能会出现奇怪的问题）
 
 ## 部署系统
 
 提示
 
-因为本项目是前后端分离的，所以需要前后端都部署好，才能进行访问
+<font color='red'>因为本项目是前后端分离的，所以需要前后端都部署好，才能进行访问</font>
 
 ### 后端部署
 
 - 打包工程文件
 
-在`twelvet`项目的`bin`目录下执行`build.bat`打包Web工程，生成war/jar包文件。
- 然后会在项目下生成`target`文件夹包含`war`或`jar`
+在`twelvet`项目的`main`目录下执行`mvn clean && mvn install`
 
 提示
 
@@ -113,34 +115,17 @@ git clone https://github.com/twelvet-s/twelvet
 - 部署工程文件
 
 1、jar部署方式
- 使用命令行执行：`java –jar twelvet-xxxx.jar` 或者执行脚本：`twelvet/bin/run-xxxx.bat`
+ 使用命令行执行：`java –jar twelvet-xxxx.jar` 
 
-2、war部署方式
- `twelvet/pom.xml`中的`packaging`修改为`war`，放入`tomcat`服务器`webapps`
+2、docker部署方式<font color='red'>(请等待完善docker-compose)</font>
 
-```xml
-   <packaging>war</packaging>
-```
+  ```bash
+  mv twelvet-xxx/target/twelvet-xxx-version-xxx.jar ../twelvet-xxx.jar
+  docker build -t twelvet-xxx.jar .
+  docker run -d --name twelvet-xxx --network host twelvet-xxx.jar
+  ```
 
-提示
 
-不同模块版本在`twelvet/twelvet-xxxx`模块下修改`pom.xml`
-
-- `SpringBoot`去除内嵌`Tomcat`（PS：此步骤不重要，因为不排除也能在容器中部署`war`）
-
-```xml
-<!-- 排除内置tomcat -->
-<dependency>
-	<groupId>org.springframework.boot</groupId>
-	<artifactId>spring-boot-starter-web</artifactId>
-	<exclusions>
-		<exclusion>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-tomcat</artifactId>
-		</exclusion>
-	</exclusions>
-</dependency>
-```
 
 ### 前端部署
 
@@ -148,42 +133,17 @@ git clone https://github.com/twelvet-s/twelvet
 
 ```bash
 # 打包正式环境
-npm run build:prod
+yarn build:prod
 
 # 打包预发布环境
-npm run build:stage
+yarn build:stage
 ```
 
 构建打包成功之后，会在根目录生成 `dist` 文件夹，里面就是构建打包好的文件，通常是 `***.js` 、`***.css`、`index.html` 等静态文件。
 
 通常情况下 `dist` 文件夹的静态文件发布到你的 nginx 或者静态服务器即可，其中的 `index.html` 是后台服务的入口页面。
 
-outputDir 提示
-
-如果需要自定义构建，比如指定 `dist` 目录等，则需要通过 [config](https://gitee.com/y_project/twelvet-Vue/blob/master/twelvet-ui/vue.config.js)的 `outputDir` 进行配置。
-
-publicPath 提示
-
-部署时改变页面js 和 css 静态引入路径 ,只需修改 `vue.config.js` 文件资源路径即可。
-
-```js
-publicPath: './' //请根据自己路径来配置更改
-export default new Router({
-  mode: 'hash', // hash模式
-})
-```
-
-## 环境变量
-
-[参考环境变量](https://doc.twelvet.vip/twelvet-vue/document/hjbs.html#环境变量)
-
-## Nginx配置
-
-[参考nginx配置](https://doc.twelvet.vip/twelvet-vue/document/hjbs.html#nginx配置)
-
-## Tomcat配置
-
-[参考tomcat配置](https://doc.twelvet.vip/twelvet-vue/document/hjbs.html#tomcat配置)
+详细的nginx配置请查看[官方文档](https://pro.ant.design/docs/deploy-cn#%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B9%B3%E5%8F%B0)
 
 ## 常见问题
 
