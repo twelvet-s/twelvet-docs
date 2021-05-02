@@ -23,6 +23,12 @@ module.exports = {
         '@vuepress/medium-zoom': {},
         // 自动目录
         'vuepress-plugin-auto-sidebar': {
+            // 标题深度
+            sidebarDepth: 2,
+            // 安装创建文件先后排序
+            sort: {
+                mode: "created_time_desc"
+            },
             title: {
                 mode: "default",
                 map: {

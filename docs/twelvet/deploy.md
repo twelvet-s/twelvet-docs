@@ -1,3 +1,7 @@
+---
+order: 3
+---
+
 # 环境部署
 
 ## 准备工作
@@ -133,10 +137,7 @@ git clone https://github.com/twelvet-s/twelvet
 
 ```bash
 # 打包正式环境
-yarn build:prod
-
-# 打包预发布环境
-yarn build:stage
+yarn build
 ```
 
 构建打包成功之后，会在根目录生成 `dist` 文件夹，里面就是构建打包好的文件，通常是 `***.js` 、`***.css`、`index.html` 等静态文件。
