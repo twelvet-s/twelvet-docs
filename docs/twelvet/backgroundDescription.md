@@ -291,6 +291,8 @@ public AjaxResult importData(MultipartFile[] files, boolean cover) throws Except
 
 ## 分布式文件上传下载
 
+### 上传文件
+
 1.建立api
 
 ```typescript
@@ -1077,8 +1079,6 @@ MessageUtils.message("user.login.submit")
 [参考Antd Pro](https://pro.ant.design/docs/i18n-cn#gatsby-focus-wrapper)
 
 ## 新建服务
-
-## 新建子模块
 
 Maven多模块下新建子模块流程案例。
 

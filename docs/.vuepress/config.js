@@ -27,7 +27,7 @@ module.exports = {
             sidebarDepth: 2,
             // 安装创建文件先后排序
             sort: {
-                mode: "created_time_desc"
+                mode: "created_time_asc"
             },
             title: {
                 mode: "default",
@@ -91,6 +91,6 @@ module.exports = {
                 link: 'https://www.twelvet.cn#docs'
             },
         ],
-        codeTheme: 'OKAIDIA',
+        codeTheme: 'okaidia',
     }
 }
