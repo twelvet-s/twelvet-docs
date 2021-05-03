@@ -27,7 +27,7 @@ module.exports = {
             sidebarDepth: 2,
             // 安装创建文件先后排序
             sort: {
-                mode: "created_time_asc"
+                mode: "created_time_desc"
             },
             title: {
                 mode: "default",

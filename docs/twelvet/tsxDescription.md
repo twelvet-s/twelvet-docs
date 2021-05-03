@@ -1,3 +1,7 @@
+---
+order: 5
+---
+
 # 前端手册
 
 ## 开发规范
@@ -6,12 +10,16 @@
 
 在 [@/src/pages](https://gitee.com/y_project/twelvet-Cloud/tree/master/twelvet-ui/src/views) 文件下 创建对应的模块文件，一般一个路由对应一个文件， 该模块下的功能就建议在本文件夹下创建一个新文件夹，各个功能模块维护自己的`api`、`utils`或`components`组件。
 
+
+
 ### 新增组件
 
 在全局的 [@/src/components](https://github.com/twelvet-s/twelvet/tree/master/twelvet-ui/src/components) 写一些全局的组件，如富文本，各种搜索组件，封装的分页组件等等能被公用的组件。
 
 每个页面或者模块特定的业务组件则会写在当前 [@/src/pages/xxx](https://github.com/twelvet-s/twelvet/tree/master/twelvet-ui/src/pages) 下面。
  如：`@/src/pages/system/user/components/xxx.tsx`。这样拆分大大减轻了维护成本。
+
+
 
 ### 新增样式
 
