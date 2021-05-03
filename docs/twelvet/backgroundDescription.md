@@ -466,7 +466,7 @@ TEST,
 2、在`sys_dict_data`字典数据表中初始化操作业务类型
 
 ```sql
-insert into sys_dict_data values(25, 10, '测试',     '10', 'sys_oper_type',       '',   'primary', 'N', '0', 'admin', '2018-03-16 11-33-00', 'ry', '2018-03-16 11-33-00', '测试操作');
+insert into sys_dict_data values(25, 10, '测试',     '10', 'sys_oper_type',       '',   'primary', 'N', '0', 'admin', '2018-03-16 11-33-00', 'twt', '2018-03-16 11-33-00', '测试操作');
 ```
 
 3、在`Controller`中使用注解
@@ -744,8 +744,8 @@ create table sys_goods (
 关于定时任务使用流程
 
 1、后台添加定时任务处理类（支持`Bean`调用、`Class`类调用）
- `Bean`调用示例：需要添加对应`Bean`注解`@Component`或`@Service`。调用目标字符串：`twtTask.twtParams('ry')`
- `Class`类调用示例：添加类和方法指定包即可。调用目标字符串：`com.twelvet.server.job.task.TWTTask.twtParams('ry')`
+ `Bean`调用示例：需要添加对应`Bean`注解`@Component`或`@Service`。调用目标字符串：`twtTask.twtParams('twt')`
+ `Class`类调用示例：添加类和方法指定包即可。调用目标字符串：`com.twelvet.server.job.task.TWTTask.twtParams('twt')`
 
 ```java
 /**
