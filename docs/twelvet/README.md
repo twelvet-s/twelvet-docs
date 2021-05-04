@@ -4,14 +4,18 @@ order: 1
 ---
 
 # TwelveT - 微服务
-
-**TwelveT**
-
-[![AUR](https://img.shields.io/badge/license-MIT-blue)](https://github.com/twelvet-s/twelvet/blob/master/LICENSE)
-[![](https://img.shields.io/badge/Author-TwelveT-orange.svg)](https://www.twelvet.cn)
-[![](https://img.shields.io/badge/version-1.1.0-success)](https://github.com/twelvet-s/twelvet)
-
-:::tip
+<p align='center'>
+<a href="https://www.twelvet.cn/" target='_blank'>
+<img src="https://img.shields.io/github/license/mashape/apistatus.svg">
+</a>
+<a href="https://github.com/twelvet-s/twelvet" target='_blank'>
+<img src="https://img.shields.io/badge/Author-TwelveT-orange.svg">
+</a>
+<a href="https://www.twelvet.cn/" target='_blank'>
+<img src="https://img.shields.io/badge/RuoYi-v2.5.0-brightgreen.svg">
+</a>
+</p>
+::: tip
 一款基于Spring Cloud Alibaba的权限管理系统，集成市面上流行库，可以作用为快速开发的一个框架使用
 :::
 
