@@ -1,3 +1,7 @@
+---
+autoGroup-1:  架构
+---
+
 # 服务网关
 
 ## 基本介绍
@@ -36,7 +40,7 @@
 
 ```yml
 server:
-  port: 8080
+  port: 88
 
 spring: 
   application:
@@ -46,7 +50,7 @@ spring:
       routes:
         # 系统模块
         - id: twelvet-system
-          uri: http://localhost:9201/
+          uri: http://localhost:8081/
           predicates:
             - Path=/system/**
           filters:
@@ -57,11 +61,11 @@ spring:
 
 ```java
 @SpringBootApplication
-public class twelvetGatewayApplication
+public class TWTGatewayApplication
 {
     public static void main(String[] args)
     {
-        SpringApplication.run(twelvetGatewayApplication.class, args);
+        SpringApplication.run(TWTGatewayApplication.class, args);
     }
 }
 ```
@@ -92,7 +96,7 @@ spring:
     gateway:
       routes:
         - id: twelvet-system
-          uri: http://localhost:9201/
+          uri: http://localhost:8081/
           predicates:
             - After=2021-02-23T14:20:00.000+08:00[Asia/Shanghai]
 ```
@@ -109,12 +113,12 @@ spring:
     gateway:
       routes:
         - id: twelvet-system
-          uri: http://localhost:9201/
+          uri: http://localhost:8081/
           predicates:
             - Cookie=loginname, twelvet
 ```
 
-测试 `curl http://localhost:8080/system/config/1 --cookie "loginname=twelvet"`
+测试 `curl http://localhost:88/system/config/1 --cookie "loginname=twelvet"`
 
 ### Header
 
@@ -128,7 +132,7 @@ spring:
     gateway:
       routes:
         - id: twelvet-system
-          uri: http://localhost:9201/
+          uri: http://localhost:8081/
           predicates:
             - Header=X-Request-Id, \d+
 ```
@@ -145,7 +149,7 @@ spring:
     gateway:
       routes:
         - id: twelvet-system
-          uri: http://localhost:9201/
+          uri: http://localhost:8081/
           predicates:
             - Host=**.somehost.org,**.anotherhost.org
 ```
@@ -162,7 +166,7 @@ spring:
     gateway:
       routes:
         - id: twelvet-system
-          uri: http://localhost:9201/
+          uri: http://localhost:8081/
           predicates:
             - Method=GET,POST
 ```
@@ -179,7 +183,7 @@ spring:
     gateway:
       routes:
         - id: twelvet-system
-          uri: http://localhost:9201/
+          uri: http://localhost:8081/
           predicates:
             - Path=/system/**
 ```
@@ -196,7 +200,7 @@ spring:
     gateway:
       routes:
         - id: twelvet-system
-          uri: http://localhost:9201/
+          uri: http://localhost:8081/
           predicates:
             - Query=username, abc.
 ```
@@ -213,7 +217,7 @@ spring:
     gateway:
       routes:
         - id: twelvet-system
-          uri: http://localhost:9201/
+          uri: http://localhost:8081/
           predicates:
             - RemoteAddr=192.168.10.1/0
 ```
@@ -230,11 +234,11 @@ spring:
     gateway:
       routes:
         - id: twelvet-system-a
-          uri: http://localhost:9201/
+          uri: http://localhost:8081/
           predicates:
             - Weight=group1, 8
         - id: twelvet-system-b
-          uri: http://localhost:9201/
+          uri: http://localhost:8081/
           predicates:
             - Weight=group1, 2
 ```
@@ -353,7 +357,7 @@ public class KeyResolverConfiguration
 ```
 
 4、测试服务验证限流
- 启动网关服务`twelvetGatewayApplication.java`和系统服务`twelvetSystemApplication.java`。
+ 启动网关服务`TWTGatewayApplication.java`和系统服务`TWTSystemApplication.java`。
  因为网关服务有认证鉴权，可以设置一下白名单`/system/*`在进行测试，多次请求会发现返回`HTTP ERROR 429`，同时在`redis`中会操作两个`key`，表示限流成功。
 
 ```text
@@ -812,10 +816,10 @@ public class GatewayConfig
 }
 ```
 
-访问：`http://localhost:8080/system/user/list`  （触发限流 ）
- 访问：`http://localhost:8080/system/role/list`  （不会触发限流）
- 访问：`http://localhost:8080/code/gen/list` （触发限流）
- 访问：`http://localhost:8080/code/gen/xxxx` （不会触发限流）
+访问：`http://localhost:88/system/user/list`  （触发限流 ）
+ 访问：`http://localhost:88/system/role/list`  （不会触发限流）
+ 访问：`http://localhost:88/code/gen/list` （触发限流）
+ 访问：`http://localhost:88/code/gen/xxxx` （不会触发限流）
 
 ## Sentinel自定义异常
 

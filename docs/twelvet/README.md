@@ -12,7 +12,7 @@ order: 1
 <img src="https://img.shields.io/badge/Author-TwelveT-orange.svg">
 </a>
 <a href="https://www.twelvet.cn/" target='_blank'>
-<img src="https://img.shields.io/badge/RuoYi-v2.5.0-brightgreen.svg">
+<img src="https://img.shields.io/badge/twelvet-v1.0.0-brightgreen.svg">
 </a>
 </p>
 ::: tip
