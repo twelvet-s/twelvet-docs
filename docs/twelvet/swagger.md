@@ -99,7 +99,7 @@ public class TestUserController
 swagger:
   title: 系统模块接口文档
   license: Powered By twelvet
-  licenseUrl: https://twelvet.vip
+  licenseUrl: https://twelvet.cn
 ```
 
 3、在`Application`启动类加入系统接口注解`@EnableCustomSwagger2`

@@ -269,7 +269,7 @@ mybatis:
 swagger:
   title: 系统模块接口文档
   license: Powered By twelvet
-  licenseUrl: https://twelvet.vip
+  licenseUrl: https://twelvet.cn
 ```
 
 ::: tip 提示
@@ -1417,7 +1417,7 @@ seata:
 
 7、测试验证
 
-[参考测试验证](https://doc.twelvet.vip/twelvet-cloud/cloud/seata.html#测试验证)
+[参考测试验证](https://doc.twelvet.cn/twelvet-cloud/cloud/seata.html#测试验证)
 
 ## 测试Feign服务调用
 
@@ -1745,7 +1745,7 @@ mybatis:
 swagger:
   title: 文件模块接口文档
   license: Powered By twelvet
-  licenseUrl: https://twelvet.vip
+  licenseUrl: https://twelvet.cn
 ```
 
 ### 4、Feign添加保存文件接口
@@ -1990,7 +1990,7 @@ service.vgroupMapping.twelvet-file-group=default
 
 6、测试验证。
 
-[参考接口测试验证](https://doc.twelvet.vip/twelvet-cloud/cloud/seata.html#测试验证)
+[参考接口测试验证](https://doc.twelvet.cn/twelvet-cloud/cloud/seata.html#测试验证)
 
 - （订单成功：文件入库一起提交）
 - （订单失败：文件入库同时回滚）
