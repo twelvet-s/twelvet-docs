@@ -30,9 +30,11 @@ Windows下载后新建一个目录存放`minio`文件，例如`D:\minioData`，�
 
 ![minio](https://oscimg.oschina.net/oscnet/up-0f06828839a1214544aae11d4c38cfb5b8a.png)
 
-提示
+::: tip 提示
 
 如果觉得官网下载慢，可以使用GitHub镜像
+
+:::
 
 - 打开控制台
 

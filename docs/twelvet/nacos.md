@@ -48,9 +48,11 @@ set MODE="standalone"
 
 ![nacos](https://oscimg.oschina.net/oscnet/up-f0bee7ddd852b3c78f6f175469defe0a46b.png)
 
-提示
+::: tip 提示
 
 如果觉得官网下载慢，可以使用GitHub镜像。
+
+:::
 
 - 打开控制台
 

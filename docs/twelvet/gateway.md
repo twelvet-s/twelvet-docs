@@ -70,9 +70,11 @@ public class TWTGatewayApplication
 }
 ```
 
-提示
+::: tip 提示
 
 目前已经存在`twelvet-gateway`网关服务，用于路由转发、异常处理、限流、降级、接口、鉴权等等。
+
+:::
 
 ## 路由规则
 
@@ -328,9 +330,11 @@ spring:
                 key-resolver: "#{@pathKeyResolver}" # 使用 SpEL 表达式按名称引用 bean
 ```
 
-提示
+::: tip 提示
 
 `StripPrefix=1`配置，表示网关转发到业务模块时候会自动截取前缀。
+
+:::
 
 3、编写`URI`限流规则配置类
 
@@ -424,11 +428,13 @@ spring:
                 fallbackUri: 'forward:/fallback'
 ```
 
-提示
+::: tip 提示
 
 上面配置包含了一个`Hystrix`过滤器，该过滤器会应用`Hystrix`熔断与降级，会将请求包装成名为`fallback`的路由指令`RouteHystrixCommand`，`RouteHystrixCommand`继承于`HystrixObservableCommand`，其内包含了`Hystrix`的断路、资源隔离、降级等诸多断路器核心功能，当网关转发的请求出现问题时，网关能对其进行快速失败，执行特定的失败逻辑，保护网关安全。
 
 配置中有一个可选参数`fallbackUri`，当前只支持`forward`模式的`URI`。如果服务被降级，请求会被转发到该`URI`对应的控制器。控制器可以是自定义的`fallback`接口；也可以使自定义的`Handler`，需要实现接口`org.springframework.web.reactive.function.server.HandlerFunction<T extends ServerResponse>`。
+
+:::
 
 3、实现添加熔断降级处理返回信息
 

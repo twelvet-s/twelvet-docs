@@ -41,9 +41,11 @@ db.user=root
 db.password=password
 ```
 
-提示
+::: tip 提示
 
 配置文件`application.properties`是在下载的`nacos-server`包`conf`目录下。
+
+:::
 
 默认配置单机模式<font color='red'>（注意更改启动参数为set MODE="standalone"）</font>，`nacos`集群/多集群部署模式参考 ([Nacos支持三种部署模式 (opens new window)](https://nacos.io/zh-cn/docs/deployment.html))
 
@@ -63,9 +65,10 @@ db.password=password
 
 [参考集成nacos配置中心(等待更新)](https://www.twelvet.cn/docs/twelvet/deploy.html#运行系统)
 
-提示
+::: tip 提示
 
 运行前需要先启动`nacos`，运行成功可以通过([http://localhost:88](http://localhost:88))访问API
+:::
 
 继续参考下面步骤部署`twelvet-ui`前端，然后通过前端地址来访问。
 
@@ -94,17 +97,21 @@ npm start
 git clone https://github.com/twelvet-s/twelvet
 ```
 
-提示
+::: tip 提示
 
 因为本项目是前后端完全分离的，所以需要前后端都单独启动好，才能进行访问。
 
 前端安装完Node后，最好设置下淘宝的镜像源，不建议使用cnpm（可能会出现奇怪的问题）
 
+:::
+
 ## 部署系统
 
-提示
+::: tip 提示
 
 <font color='red'>因为本项目是前后端分离的，所以需要前后端都部署好，才能进行访问</font>
+
+:::
 
 ### 后端部署
 
@@ -112,9 +119,11 @@ git clone https://github.com/twelvet-s/twelvet
 
 在`twelvet`项目的`main`目录下执行`mvn clean && mvn install`
 
-提示
+::: tip 提示
 
 不同模块版本会生成在`twelvet/twelvet-xxxx`模块下`target`文件夹
+
+:::
 
 - 部署工程文件
 

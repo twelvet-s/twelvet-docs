@@ -45,9 +45,11 @@ Windows下载解压后（.zip），直接点击`bin/seata-server.bat`就可以�
 
 ![seata](https://oscimg.oschina.net/oscnet/up-859c18c316354a0ec69d8c6b765ef97b03b.png)
 
-提示
+::: tip 提示
 
 如果觉得官网下载慢，可以使用我分享的网盘地址: https://pan.baidu.com/s/1E9J52g6uW_VFWY34fHL6zA 提取码: vneh
+
+:::
 
 ## 如何使用
 
@@ -270,9 +272,11 @@ swagger:
   licenseUrl: https://twelvet.vip
 ```
 
-提示
+::: tip 提示
 
 注意，一定要设置`spring.datasource.dynamic.seata`配置项为`true`，开启对`Seata`的集成，否则会导致`Seata`全局事务回滚失败。
+
+:::
 
 ## 示例代码
 
@@ -1991,6 +1995,8 @@ service.vgroupMapping.twelvet-file-group=default
 - （订单成功：文件入库一起提交）
 - （订单失败：文件入库同时回滚）
 
-提示
+::: tip 提示
 
 `spring-cloud-starter-alibaba-seata`依赖会传递`Seata`的`XID`，否则的话需要自己在`header`里传递`XID`。
+
+:::

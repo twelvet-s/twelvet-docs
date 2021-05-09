@@ -43,9 +43,11 @@ Windows下载解压后（.tar.gz），直接点击`bin/startup.bat`就可以了�
 
 ![skywalking](https://oscimg.oschina.net/oscnet/up-9a74069dbd42e28e47a94840d8db7475652.png)
 
-提示
+::: tip 提示
 
-如果觉得官网下载慢，可以使用我分享的网盘地址: https://pan.baidu.com/s/1E9J52g6uW_VFWY34fHL6zA 提取码: vneh
+如果觉得官网下载慢，可以使用GitHub镜像
+
+:::
 
 - 打开控制台
 

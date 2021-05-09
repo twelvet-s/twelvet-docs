@@ -139,9 +139,11 @@ public class TestUserController
 
 6、启动后访问`http://localhost:88/user/admin`，返回正确数据表示测试通过。
 
-提示
+::: tip 提示
 
 目前已经存在`twelvet-api-system`系统接口模块，用于服务调用。
+
+:::
 
 ## 负载均衡
 
@@ -197,9 +199,11 @@ feign:
       enabled: true  
 ```
 
-提示
+::: tip 提示
 
 开启压缩可以有效节约网络资源，但是会增加CPU压力，建议把最小压缩的文档大小适度调大一点。
+
+:::
 
 ### Http连接池
 

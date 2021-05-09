@@ -55,9 +55,11 @@ a:hover{
 4. 获取服务端返回；
 5. 更新 data；
 
-提示
+::: tip 提示
 
 其中，[@/src/utils/request.js](https://gitee.com/y_project/twelvet-Cloud/blob/master/twelvet-ui/src/utils/request.js) 是基于 axios 的封装，便于统一处理 POST，GET 等请求参数，请求头，以及错误提示信息等。 它封装了全局 request拦截器、response拦截器、统一的错误处理、统一做了超时处理、baseURL设置等。
+
+:::
 
 ### 请求示例
 

@@ -60,9 +60,11 @@ java -Dserver.port=8718 -Dcsp.sentinel.dashboard.server=localhost:8718 -Dproject
 
 ![sentinel](https://oscimg.oschina.net/oscnet/up-d3e4965511f73cee8ec905740129e7f063a.png)
 
-提示
+::: tip 提示
 
 如果觉得官网下载慢，可以使用GitHub镜像
+
+:::
 
 - 打开控制台
 
@@ -250,9 +252,11 @@ public class TestUserController
 | exceptionsToTrace  | 异常类跟踪列表（默认为Throwable.class）       |
 | exceptionsToIgnore | 排除掉的异常类型                              |
 
-提示
+::: tip 提示
 
 注意：注解方式埋点不支持 private 方法。
+
+:::
 
 ## 流量规则
 
@@ -311,9 +315,11 @@ private void initFlowQpsRule() {
 
 同一个资源可以同时有多个限流规则，检查规则时会依次检查。
 
-提示
+::: tip 提示
 
 从`1.6.3`版本开始，`Sentinel Web filter`默认收敛所有`URL`的入口`context`，因此链路限流不生效。`1.7.0`版本开始（对应`SCA 2.1.1.RELEASE`)，我们在`CommonFilter`引入了`WEB_CONTEXT_UNIFY`这个`init parameter`，用于控制是否收敛`context`。将其配置为`false`即可根据不同的`URL`进行链路限流。 参考：https://github.com/alibaba/sentinel/issues/1213
+
+:::
 
 ## 降级规则
 
