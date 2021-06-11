@@ -8,7 +8,7 @@ order: 1
 <a href="https://www.twelvet.cn/" target='_blank'>
 <img src="https://img.shields.io/github/license/mashape/apistatus.svg">
 </a>
-<a href="https://github.com/twelvet-s/twelvet" target='_blank'>
+<a href="https://gitee.com/twelvet/twelvet" target='_blank'>
 <img src="https://img.shields.io/badge/Author-TwelveT-orange.svg">
 </a>
 <a href="https://www.twelvet.cn/" target='_blank'>

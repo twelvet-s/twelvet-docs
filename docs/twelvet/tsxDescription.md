@@ -14,16 +14,16 @@ order: 5
 
 ### 新增组件
 
-在全局的 [@/src/components](https://github.com/twelvet-s/twelvet/tree/master/twelvet-ui/src/components) 写一些全局的组件，如富文本，各种搜索组件，封装的分页组件等等能被公用的组件。
+在全局的 [@/src/components](https://gitee.com/twelvet/twelvet/tree/master/twelvet-ui/src/components) 写一些全局的组件，如富文本，各种搜索组件，封装的分页组件等等能被公用的组件。
 
-每个页面或者模块特定的业务组件则会写在当前 [@/src/pages/xxx](https://github.com/twelvet-s/twelvet/tree/master/twelvet-ui/src/pages) 下面。
+每个页面或者模块特定的业务组件则会写在当前 [@/src/pages/xxx](https://gitee.com/twelvet/twelvet/tree/master/twelvet-ui/src/pages) 下面。
  如：`@/src/pages/system/user/components/xxx.tsx`。这样拆分大大减轻了维护成本。
 
 
 
 ### 新增样式
 
-页面的样式和组件是一个道理，全局的 [@/src/global.less](https://github.com/twelvet-s/twelvet/tree/master/twelvet-ui/src/global.less) 放置一下全局公用的样式，每一个页面的样式就写在当前 `views`下面，请记住加上`scoped` 就只会作用在当前组件内了，避免造成全局的样式污染。
+页面的样式和组件是一个道理，全局的 [@/src/global.less](https://gitee.com/twelvet/twelvet/tree/master/twelvet-ui/src/global.less) 放置一下全局公用的样式，每一个页面的样式就写在当前 `views`下面，请记住加上`scoped` 就只会作用在当前组件内了，避免造成全局的样式污染。
 
 ```css
 @import '~antd/es/style/themes/default.less';
