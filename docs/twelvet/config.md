@@ -10,7 +10,7 @@ autoGroup-1:   架构
 
 在微服务架构中，当系统从一个单体应用，被拆分成分布式系统上一个个服务节点后，配置文件也必须跟着迁移（分割），这样配置就分散了，不仅如此，分散中还包含着冗余，如下图：
 
-![config](https://oscimg.oschina.net/oscnet/up-e61a40fefffca8dd0ab215273af767f2961.png)
+![config](https://www.twelvet.cn/assets/images/docs/8c1641ab-ca50-4c9c-830b-514017bea77d.png)
 
 总得来说，配置中心就是一种统一管理各种应用配置的基础服务组件。
 
@@ -22,7 +22,7 @@ autoGroup-1:   架构
 
 `Nacos`是阿里巴巴开源的一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。
 
-![config](https://oscimg.oschina.net/oscnet/up-36349d06b1ac13ea40abd2f1666b73218aa.png)
+![config](https://www.twelvet.cn/assets/images/docs/ddbcaa8c-a83a-4f6d-bb6d-e9f661b7f241.png)
 
 配置中心的服务流程如下：
 
@@ -92,7 +92,7 @@ public class TWTXxxxApplication
 
 4、给配置中心默认添加一个数据集 （Data Id）
 
-![config](https://oscimg.oschina.net/oscnet/up-43e02457f6a2b5ebc14c0fb33e4984e0612.png)
+![config](https://www.twelvet.cn/assets/images/docs/83112dc4-5f8f-4a96-81b0-c901f4861322.png)
 
 ```yml
 # 测试属性
@@ -189,7 +189,7 @@ db.password=password
 server-addr: 192.168.100.101:8848,192.168.100.102:8848,192.168.100.103:8848
 ```
 
-3、启动运行成功后显示如图表示成功。 ![nacos](https://oscimg.oschina.net/oscnet/up-2c91c7695642063639eb047b9757d8bad8a.png)
+3、启动运行成功后显示如图表示成功。 ![nacos](https://www.twelvet.cn/assets/images/docs/f1c3a6ad-b871-447f-bded-0241264183f6.png)
 
 ## 控制台使用
 
@@ -201,7 +201,7 @@ server-addr: 192.168.100.101:8848,192.168.100.102:8848,192.168.100.103:8848
 
 服务列表帮助用户以统一的视图管理其所有的微服务以及服务健康状态。
 
-![nacos](https://oscimg.oschina.net/oscnet/up-8bec3bdbeb39401eb93fc3349e723dc134a.png)
+![nacos](https://www.twelvet.cn/assets/images/docs/0f7e6a15-02c0-4297-a54e-8cbb31af75a2.png)
 
 在服务列表页面点击详情，可以看到服务的详情。可以查看服务、集群和实例的基本信息。
 
@@ -209,39 +209,39 @@ server-addr: 192.168.100.101:8848,192.168.100.102:8848,192.168.100.103:8848
 
 `Nacos`为用户提供了流量权重控制的能力，同时开放了服务流量的阈值保护，以帮助用户更好的保护服务服务提供者集群不被意外打垮。如下图所以，可以点击实例的编辑按钮，修改实例的权重。如果想增加实例的流量，可以将权重调大，如果不想实例接收流量，则可以将权重设为0。
 
-![nacos](https://oscimg.oschina.net/oscnet/up-4892b25e2fb5ff36e51d9294690f8b41438.png)
+![nacos](https://www.twelvet.cn/assets/images/docs/e7e40183-94d1-485b-aed4-4fa7792b2f81.png)
 
 **服务元数据管理**
 
 Nacos提供多个维度的服务元数据的暴露，帮助用户存储自定义的信息。这些信息都是以K-V的数据结构存储，在控制台上，会以`{"version":"1.0","env":"prod"}`这样的格式展示。类似的，编辑元数据可以通过相同的格式进行。例如服务的元数据编辑，首先点击服务详情页右上角的“编辑服务”按钮，然后在元数据输入框输入：`{"version":"1.0","env":"prod"}`。
 
-![nacos](https://oscimg.oschina.net/oscnet/up-04bc240bdbc03401530f0ac9780eef4dbda.png)
+![nacos](https://www.twelvet.cn/assets/images/docs/d4bd4777-0a6a-47a3-bc34-c3dc23730473.png)
 
 点击确认，就可以在服务详情页面，看到服务的元数据已经更新了。
 
-![nacos](https://oscimg.oschina.net/oscnet/up-77c83cdbd6df72e7e093933657b15d0342b.png)
+![nacos](https://www.twelvet.cn/assets/images/docs/390ff37d-d8d1-4274-8a0d-2ce2939caac5.png)
 
 **服务优雅上下线**
 
 Nacos还提供服务实例的上下线操作，在服务详情页面，可以点击实例的“上线”或者“下线”按钮，被下线的实例，将不会包含在健康的实例列表里。
 
-![nacos](https://oscimg.oschina.net/oscnet/up-7004a2ff47edd6260c54b9de84263007259.png)
+![nacos](https://www.twelvet.cn/assets/images/docs/6f32de17-d422-4335-85df-a44bbfa01e67.png)
 
 ### 配置管理
 
 Nacos支持基于Namespace和Group的配置分组管理，以便用户更灵活的根据自己的需要按照环境或者应用、模块等分组管理微服务以及Spring的大量配置，在配置管理中主要提供了配置历史版本、回滚、订阅者查询等核心管理能力。
 
-![nacos](https://oscimg.oschina.net/oscnet/up-ed75d526051089fb9e7bffe6b1512ad9c91.png)
+![nacos](https://www.twelvet.cn/assets/images/docs/b4c26027-f372-49aa-bd9c-e534e17e67db.png)
 
 **配置的版本及一键回滚**
 
-`Nacos`通过提供配置版本管理及其一键回滚能力，帮助用户改错配置的时候能够快速恢复，降低微服务系统在配置管理上的一定会遇到的可用性风险。 ![nacos](https://oscimg.oschina.net/oscnet/up-177797c0f922f36117bef5eb71030faf335.png)
+`Nacos`通过提供配置版本管理及其一键回滚能力，帮助用户改错配置的时候能够快速恢复，降低微服务系统在配置管理上的一定会遇到的可用性风险。 ![nacos](https://www.twelvet.cn/assets/images/docs/4c97c4f7-306b-43c9-8a64-bdbe13c4769a.png)
 
 **命名空间管理**
 
 `Nacos`基于`Namespace`帮助用户逻辑隔离多个命名空间，这可以帮助用户更好的管理测试、预发、生产等多环境服务和配置，让每个环境的同一个配置（如数据库数据源）可以定义不同的值。
 
-![nacos](https://oscimg.oschina.net/oscnet/up-2f1bfb9e41fb0a71f8d526978ae1835018f.png)
+![nacos](https://www.twelvet.cn/assets/images/docs/7fbb6c51-4e04-4492-9c73-31dac1f99862.png)
 
 ### 修改默认密码
 

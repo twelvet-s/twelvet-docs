@@ -112,7 +112,7 @@ public class TWTMonitorApplication
 
 浏览器访问([http://localhost:9100 (opens new window)](http://localhost:9100))可以看到以下界面。
 
-![monitor](https://oscimg.oschina.net/oscnet/up-5fa1693c4b4ef2f544105970aa3ed53adef.png)
+![monitor](https://www.twelvet.cn/assets/images/docs/25c85e2d-ad89-43dc-8e3f-2482cd6eb098.png)
 
 ## 客户端配置
 
@@ -267,7 +267,7 @@ logging:
     name: logs/${spring.application.name}/info.log
 ```
 
-进入日志-日志文件`查看实时日志`，效果如下 ![config](https://oscimg.oschina.net/oscnet/up-2f1985d1311e938d7043b48426145c5584d.png)
+进入日志-日志文件`查看实时日志`，效果如下 ![config](https://www.twelvet.cn/assets/images/docs/3a2154c3-9621-4a5f-a753-a099cee8b392.png)
 
 ## 动态日志
 
@@ -275,7 +275,7 @@ logging:
 
 进入日志-日志配置`修改日志级别`，效果如下
 
-![config](https://oscimg.oschina.net/oscnet/up-f45b254e13a032b82b6e110bf9c658541f8.png)
+![config](https://www.twelvet.cn/assets/images/docs/45513fe6-537f-46d6-9a24-a0db64eb3cd6.png)
 
 ## 自定义通知
 

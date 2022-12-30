@@ -31,7 +31,7 @@ SkyWalking 特点
 - 支持警告
 - 优秀的可视化效果。
 
-下面是`SkyWalking`的架构图： ![skywalking](https://oscimg.oschina.net/oscnet/up-551a741ebdd3614f06408cc23dc302ef576.png)
+下面是`SkyWalking`的架构图： ![skywalking](https://www.twelvet.cn/assets/images/docs/1346a6a5-d9a5-4753-ba52-8f49de7745f4.png)
 
 ## 下载方式
 
@@ -41,7 +41,7 @@ SkyWalking 特点
 
 Windows下载解压后（.tar.gz），直接点击`bin/startup.bat`就可以了，这个时候实际上是启动了两个项目，一个收集器，一个web页面。
 
-![skywalking](https://oscimg.oschina.net/oscnet/up-9a74069dbd42e28e47a94840d8db7475652.png)
+![skywalking](https://www.twelvet.cn/assets/images/docs/4061d6a0-b63a-4c27-9f1c-e1eddb1dc4cb.png)
 
 ::: tip 提示
 
@@ -53,7 +53,7 @@ Windows下载解压后（.tar.gz），直接点击`bin/startup.bat`就可以了�
 
 `skywalking`提供了一个可视化的监控平台，安装好之后，在浏览器中输入([http://localhost:8080 (opens new window)](http://localhost:8080))就可以访问了。（我使用的是8.3.0版本）
 
-![skywalking](https://oscimg.oschina.net/oscnet/up-8c56e9280dbd69e3db1508fa27af7fa704a.png)
+![skywalking](https://www.twelvet.cn/assets/images/docs/fb450604-a8af-4f26-bfa7-40f442c52e99.png)
 
 ## 如何使用
 
@@ -61,11 +61,11 @@ Windows下载解压后（.tar.gz），直接点击`bin/startup.bat`就可以了�
 
 `idea`配置`vm`参数图：
 
-![idea skywalking](https://oscimg.oschina.net/oscnet/up-28824574c3bb227dfc487aa82fa60852656.png)
+![idea skywalking](https://www.twelvet.cn/assets/images/docs/dd17dc2a-9da7-4b39-a886-c0b73af0843c.png)
 
 `eclipse`配置`vm`参数图：
 
-![eclipse skywalking](https://oscimg.oschina.net/oscnet/up-ea035ca46c210197746804c59fad4ef403b.png)
+![eclipse skywalking](https://www.twelvet.cn/assets/images/docs/37d15ec2-8939-49c0-a9c9-bfc9ccee6b06.png)
 
 ```text
 -javaagent:D:\apache-skywalking-apm-bin\agent\skywalking-agent.jar
@@ -75,7 +75,7 @@ Windows下载解压后（.tar.gz），直接点击`bin/startup.bat`就可以了�
 
 启动项目，访问接口，再去([http://localhost:8080 (opens new window)](http://localhost:8080))看面板数据
 
-![skywalking](https://oscimg.oschina.net/oscnet/up-c3d59e9788dc7fbc34a9dd9235ad7856ad4.png)
+![skywalking](https://www.twelvet.cn/assets/images/docs/9415d026-aaa6-4325-a880-b7d50f3e8778.png)
 
 | 参数         | 描述                           |
 | ------------ | ------------------------------ |
@@ -87,12 +87,12 @@ Windows下载解压后（.tar.gz），直接点击`bin/startup.bat`就可以了�
 
 当我们访问一个服务，而他会调用另一个服务的时候，点击拓扑图会出现下图的效果，这就是链路跟踪的效果
 
-![skywalking](https://oscimg.oschina.net/oscnet/up-fc658837ebe738ba9d470f1f2b4c0de4231.png)
+![skywalking](https://www.twelvet.cn/assets/images/docs/3800219b-111f-4e32-92f4-b5231e6f14d7.png)
 
 ## 追踪调用链
 
 在追踪界面，可以查看整个请求的具体调用链
 
-![skywalking](https://oscimg.oschina.net/oscnet/up-a36efa6463829a3ebbc4cc4efacb6eb57e3.png)
+![skywalking](https://www.twelvet.cn/assets/images/docs/b55eb472-6862-4bf1-a9b6-7c814bc0714d.png)
 
  

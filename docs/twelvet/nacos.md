@@ -18,7 +18,7 @@ autoGroup-1:  架构
 
 `Nacos`是阿里巴巴开源的一个更易于构建云原生应用的动态服务发现、配置管理和服务管理平台。
 
-![nacos](https://oscimg.oschina.net/oscnet/up-3b2499cb4616a7073db056095ff530c03c9.png)
+![nacos](https://www.twelvet.cn/assets/images/docs/abf2ec0f-6246-4629-aaf7-2109385684ba.png)
 
 ## 下载方式
 
@@ -46,7 +46,7 @@ Nacos默认是`集群模式cluster`，可以`startup.cmd`属性`MODE`为`单机�
 set MODE="standalone"
 ```
 
-![nacos](https://oscimg.oschina.net/oscnet/up-f0bee7ddd852b3c78f6f175469defe0a46b.png)
+![nacos](https://www.twelvet.cn/assets/images/docs/5963b959-86b5-4126-bc3c-51353fb0e11e.png)
 
 ::: tip 提示
 
@@ -58,7 +58,7 @@ set MODE="standalone"
 
 `Nacos`提供了一个可视化的操作平台，安装好之后，在浏览器中输入([http://localhost:8848/nacos (opens new window)](http://localhost:8848/nacos))就可以访问了，默认的用户名和密码都是`nacos`（我使用的是1.4.1版本）
 
-![nacos](https://oscimg.oschina.net/oscnet/up-9a6ee9156ed87e5f8856892938f45bd4ace.png)
+![nacos](https://www.twelvet.cn/assets/images/docs/ac2bc92d-a463-4db0-8f06-bc8a6c98f506.png)
 
 ## 如何使用
 
@@ -108,7 +108,7 @@ public class TWTXxxxApplication
 
 4、启动服务，查看`Nacos`控制台的服务列表
 
-![nacos](https://oscimg.oschina.net/oscnet/up-4ed73db8d4582d4f0fc6bcc1ba38f6e6054.png)
+![nacos](https://www.twelvet.cn/assets/images/docs/b1b3ccdc-4a83-4d3e-9509-1209295881fe.png)
 
 ## 测试验证
 

@@ -12,7 +12,7 @@ Mysql >= 5.7.0 (推荐5.7版本)
 Redis >= 3.0
 Maven >= 3.0
 Node >= 10
-nacos >= 1.1.0
+nacos >= 2.x.x
 sentinel >= 1.6.0
 ```
 
@@ -28,7 +28,7 @@ sentinel >= 1.6.0
 
 4、创建数据库`twelvet_job`并导入`twelvet_job.sql`（可选）
 
-4、创建数据库`nacos`并导入数据脚本`twelvet_nacos.sql`<font color='red'>（必须）</font>
+4、创建数据库`twelvet_nacos`并导入数据脚本`twelvet_nacos.sql`<font color='red'>（必须）</font>
 
 5、配置`nacos`持久化，修改`conf/application.properties`文件，增加支持`mysql`数据源配置
 
@@ -36,7 +36,7 @@ sentinel >= 1.6.0
 # db mysql
 spring.datasource.platform=mysql
 db.num=1
-db.url.0=jdbc:mysql://localhost:3306/twelvet-config?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
+db.url.0=jdbc:mysql://localhost:3306/twelvet_nacos?characterEncoding=utf8&connectTimeout=1000&socketTimeout=3000&autoReconnect=true&useUnicode=true&useSSL=false&serverTimezone=UTC
 db.user=root
 db.password=password
 ```
@@ -79,13 +79,12 @@ db.password=password
 cd twelvet-ui
 
 # 安装依赖
-npm install
+npm i -g pnpm --registry=https://registry.npmmirror.com
+pnpm install
 
-# 强烈建议不要用直接使用 cnpm 安装，会有各种诡异的 bug，可以通过重新指定 registry 来解决 npm 安装速度慢的问题。
-npm install --registry=https://registry.npm.taobao.org
 
 # 本地开发 启动项目
-npm start
+pnpm start
 ```
 
 4、打开浏览器，输入：([http://localhost:8000](http://localhost:8000)) 默认账户/密码 `admin/123456）
@@ -146,7 +145,7 @@ git clone https://gitee.com/twelvet/twelvet
 
 ```bash
 # 打包正式环境
-yarn build
+pnpm build
 ```
 
 构建打包成功之后，会在根目录生成 `dist` 文件夹，里面就是构建打包好的文件，通常是 `***.js` 、`***.css`、`index.html` 等静态文件。

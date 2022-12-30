@@ -32,7 +32,7 @@ sentinel具有以下特征：
 
 **完美的SPI扩展点:** Sentinel提供简单易用的,完美的SPI扩展接口,可以通过实现扩展接口来快速定制逻辑,例如定制规则管理,适配动态数据源等
 
-下面是`sentinel`的架构图： ![sentinel](https://oscimg.oschina.net/oscnet/up-a35c327257487fd453b4f4f1ccd0967af68.png)
+下面是`sentinel`的架构图： ![sentinel](https://www.twelvet.cn/assets/images/docs/1dcbb4d4-9ded-4ff0-bbe7-98455c03f505.png)
 
 - 核心概念
 
@@ -58,7 +58,7 @@ java -Dserver.port=8718 -Dcsp.sentinel.dashboard.server=localhost:8718 -Dproject
 
 其中`-Dserver.port=8718`用于指定`Sentinel`控制台端口为`8718`，`F:\software\sentinel\sentinel-dashboard-1.8.0.jar`为下载的包路径地址。
 
-![sentinel](https://oscimg.oschina.net/oscnet/up-d3e4965511f73cee8ec905740129e7f063a.png)
+![sentinel](https://www.twelvet.cn/assets/images/docs/52809497-83fe-4ed1-b19b-6bdcbbe3e540.png)
 
 ::: tip 提示
 
@@ -70,7 +70,7 @@ java -Dserver.port=8718 -Dcsp.sentinel.dashboard.server=localhost:8718 -Dproject
 
 `Sentinel`提供了一个可视化的操作平台，安装好之后，在浏览器中输入([http://localhost:8718 (opens new window)](http://localhost:8718))就可以访问了，默认的用户名和密码都是`sentinel`（我使用的是1.8.0版本）
 
-![sentinel](https://oscimg.oschina.net/oscnet/up-82f61a6c9e327ede41d7101a27f559a9702.png)
+![sentinel](https://www.twelvet.cn/assets/images/docs/27bc439d-48ab-4278-9b03-20d428bef795.png)
 
 ## 如何使用
 
@@ -264,7 +264,7 @@ public class TestUserController
 
 选择`流控规则`，新增流控规则，填入对应信息。
 
-![sentinel](https://oscimg.oschina.net/oscnet/up-79717f5c1e79e7fd565dfa8efa20c456e03.png)
+![sentinel](https://www.twelvet.cn/assets/images/docs/d2deba38-2885-42de-89f0-a3a3dab119a2.png)
 
 - 资源名： 唯一名称，默认请求路径
 - 针对来源： Sentinel可以针对调用者进行限流，填写微服务名，默认default（不区分来源）
@@ -329,7 +329,7 @@ private void initFlowQpsRule() {
 
 选择`降级规则`，新增降级规则，填入对应信息。
 
-![sentinel](https://oscimg.oschina.net/oscnet/up-cce37280dcb9a385f1c48234f34efdad4e5.png)
+![sentinel](https://www.twelvet.cn/assets/images/docs/3b08dc39-3e26-4149-aea2-80a66a952152.png)
 
 ###3) 代码定义
 

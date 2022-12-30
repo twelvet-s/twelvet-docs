@@ -28,7 +28,7 @@ Windows下载后新建一个目录存放`minio`文件，例如`D:\minioData`，�
 
 启动成功以后如下图，最后红色字提示修改`access Key`和`Secret Key`
 
-![minio](https://oscimg.oschina.net/oscnet/up-0f06828839a1214544aae11d4c38cfb5b8a.png)
+![minio](https://www.twelvet.cn/assets/images/docs/4fed7e0a-acfa-498a-9c19-faea807e6aad.png)
 
 ::: tip 提示
 
@@ -42,7 +42,7 @@ Windows下载后新建一个目录存放`minio`文件，例如`D:\minioData`，�
 minio`提供了一个可视化的管理控制平台，安装好之后，在浏览器中输入([http://localhost:9000/ (opens new window)](http://localhost:9000/))就可以访问了，默认的用户名和密码都是`minioadmin
 ```
 
-![minio](https://oscimg.oschina.net/oscnet/up-0c6c496704c7f30a569a07c520d0bbf40dd.png)
+![minio](https://www.twelvet.cn/assets/images/docs/4f60107e-b521-4551-8174-ad473bdac9f3.png)
 
 ### 如何使用
 
@@ -64,19 +64,19 @@ minio:
 
 在后台管理界面选择`+号`创建你的`Create Bucket`，可以理解为一个文件夹用来存放图片。桶创建成功之后就可以上传图片了。
 
-![minio](https://oscimg.oschina.net/oscnet/up-fc0a58dcb7bc7a2ec03736857febb50e20d.png)
+![minio](https://www.twelvet.cn/assets/images/docs/70a93bf9-898f-437c-b2c8-84b63c2ad0dc.png)
 
 - 上传图片
 
 在后台管理界面选择`+号`上传你的`Upload file`，上传你自己的图片。在文件列表的右边就可以看到图片了。
 
-![minio](https://oscimg.oschina.net/oscnet/up-106b75fff841430904e5125272b2d7f1bf6.png)
+![minio](https://www.twelvet.cn/assets/images/docs/f4e0c038-ce46-47c7-8158-be7a00344ae4.png)
 
 ### 访问策略
 
 设置`* ReadOnly`则所有用户通过文件路径即可访问，私有桶则不必设置访问策略。
 
-![minio](https://oscimg.oschina.net/oscnet/up-4c2d1660428db87b223240736461ac034fc.png)
+![minio](https://www.twelvet.cn/assets/images/docs/426e8fd0-fa8b-4bc7-b209-7fa1914331a8.png)
 
 启动`twelvet-file`应用，在浏览器中打开([http://127.0.0.1:9000/twelvet/twelvet.png (opens new window)](http://127.0.0.1:9000/twelvet/twelvet.png))就可以访问图片了。
 

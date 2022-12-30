@@ -122,13 +122,13 @@ public class TWTSystemApplication
 
 访问`http://{ip}:{port}/swagger-ui.html`地址，出现如下图表示成功。
 
-![swagger](https://oscimg.oschina.net/oscnet/up-24a0d329ed368fa86c6da597ed158898e4f.png)
+![swagger](https://www.twelvet.cn/assets/images/docs/3adf6c74-9d82-40f5-b797-7efbadb39788.png)
 
 ## 接口聚合
 
 访问`swagger-ui.html`的时候会发现右上角的`Select a spec`这个下拉选项
 
-![swagger](https://oscimg.oschina.net/oscnet/up-9d740e616ac8523c9d8285ce553689ca20b.png)
+![swagger](https://www.twelvet.cn/assets/images/docs/6ea3192e-75c1-4774-ab4e-71c07c87e808.png)
 
 当启动一个`springboot`项目的时候会发现这个下拉选项毫无用处，不过它的强大是在于这个下拉可以用来切换不同项目的`swagger`接口地址，这就实现了使用一个网关的`url`访问所有的项目接口。
 
@@ -348,7 +348,7 @@ spring:
 
 打开浏览器，输入：([http://localhost:88/swagger-ui.html (opens new window)](http://localhost:88/swagger-ui.html))
 
-![swagger](https://oscimg.oschina.net/oscnet/up-7455b9e8a7850faebf31f2a869412e2132d.png)
+![swagger](https://www.twelvet.cn/assets/images/docs/1fdce5f3-f554-4d4a-b466-5dc2c4d1d277.png)
 
 选择切换不同服务的`swagger`接口
 
@@ -356,11 +356,11 @@ spring:
 
 在测试系统接口中可能存在一些接口用到用户信息或权限验证，此时需要添加全局的`token`参数。如图
 
-![swagger](https://oscimg.oschina.net/oscnet/up-a474910efef3e0739b42f3d5cc329f8ef66.png)
+![swagger](https://www.twelvet.cn/assets/images/docs/3d052c4c-ecf4-4a6a-87a0-b5f827de83be.png)
 
 `token`是在登录成功后返回的，可以在浏览器通过F12查看`Network`中的请求地址，对应参数`Authorization`。复制截图内容到`swagger`全局`Authorization`属性`value`参数中，点击`Authorize`，以后每次访问接口会携带此`token`信息。
 
-![swagger](https://oscimg.oschina.net/oscnet/up-4f771cfc906fa9dcc173f20fae80c7f5191.png)
+![swagger](https://www.twelvet.cn/assets/images/docs/2420551a-9bc6-4ed5-9d2d-4a7f7d1b4bf9.png)
 
 ## 整合knife4j
 
@@ -388,6 +388,6 @@ spring:
 
 访问`http://{ip}:{port}/doc.html`地址，出现如下图表示成功。
 
-![knife4j](https://oscimg.oschina.net/oscnet/up-860f80bd38f5998dfc319b2514cf1bae169.png)
+![knife4j](https://www.twelvet.cn/assets/images/docs/3fceecf8-8591-48b6-b206-e4e0742c1b6f.png)
 
  

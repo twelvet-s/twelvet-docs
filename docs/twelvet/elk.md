@@ -24,7 +24,7 @@ autoGroup-1:   架构
 
 **Logstash** 基于`java`，是一个开源的用于收集,分析和存储日志的工具。
 
-下面是`ELK`的工作原理： ![elk](https://oscimg.oschina.net/oscnet/up-c62bd9299557f77a05d1a9c4ccd046f8fef.png)
+下面是`ELK`的工作原理： ![elk](https://www.twelvet.cn/assets/images/docs/1861bcc4-a705-4b8c-996d-959f4356922d.png)
 
 ## Elasticsearch
 
@@ -38,7 +38,7 @@ ElasticSearch是Elastic Stack的核心，同时Elasticsearch  是一个分布式
 
 ### 下载
 
-到官网下载： ([https://www.elastic.co/cn/downloads/elasticsearch (opens new window)](https://www.elastic.co/cn/downloads/elasticsearch)) ![Elasticsearch](https://oscimg.oschina.net/oscnet/up-d392963dafc68bc669d12ada72348dbf95b.png)
+到官网下载： ([https://www.elastic.co/cn/downloads/elasticsearch (opens new window)](https://www.elastic.co/cn/downloads/elasticsearch)) ![Elasticsearch](https://www.twelvet.cn/assets/images/docs/dc0c3c83-bf18-4f32-8a16-6672aaebe3a7.png)
 
 ### 安装
 
@@ -85,7 +85,7 @@ su - es
 /usr/local/elasticsearch-7.10.2/bin/elasticsearch -d 
 ```
 
-在浏览器打开`9200`端口地址： ([http://120.78.129.95:9200/ (opens new window)](http://120.78.129.95:9200/))，如果出现了下面的信息，就表示已经成功启动了 ![Elasticsearch](https://oscimg.oschina.net/oscnet/up-38da6dfc0998a88b8b2f974f6192ae6420a.png)
+在浏览器打开`9200`端口地址： ([http://120.78.129.95:9200/ (opens new window)](http://120.78.129.95:9200/))，如果出现了下面的信息，就表示已经成功启动了 ![Elasticsearch](https://www.twelvet.cn/assets/images/docs/43106696-517e-4ae0-812e-c63e786df1b3.png)
 
 ## Logstash
 
@@ -96,7 +96,7 @@ Logstash是一个开源的服务器端数据处理管道，能够同时从多个
 ###2) 下载
 
 到官网下载： ([https://www.elastic.co/cn/downloads/logstash (opens new window)](https://www.elastic.co/cn/downloads/logstash))
- ![Logstash](https://oscimg.oschina.net/oscnet/up-7780b6e1555bae2c2d2ce3e1dde44d9e783.png)
+ ![Logstash](https://www.twelvet.cn/assets/images/docs/fc5b810f-0e9c-44d4-b83e-61c56bc7c903.png)
 
 ###2) 安装
 
@@ -139,7 +139,7 @@ Kibana 是一款开源的数据分析和可视化平台，它是 Elastic Stack �
 ###3) 下载
 
 到官网下载： ([https://www.elastic.co/cn/downloads/kibana (opens new window)](https://www.elastic.co/cn/downloads/kibana))
- ![Kibana](https://oscimg.oschina.net/oscnet/up-8a4821b16ba2f3bd96baf9a3b2bb7b55f0b.png)
+ ![Kibana](https://www.twelvet.cn/assets/images/docs/47415d0a-0d67-46c7-960e-e4a0758c138d.png)
 
 ###3) 安装
 
@@ -182,7 +182,7 @@ su - es
 /usr/local/kibana-7.10.2/bin/kibana &
 ```
 
-在浏览器打开`5601`端口地址： ([http://120.78.129.95:5601/ (opens new window)](http://120.78.129.95:5601/))，如果出现了下面的信息，就表示已经成功启动了 ![kibana](https://oscimg.oschina.net/oscnet/up-f9bd125ad0b1d3887a2d3f94df9e9202d2c.png)
+在浏览器打开`5601`端口地址： ([http://120.78.129.95:5601/ (opens new window)](http://120.78.129.95:5601/))，如果出现了下面的信息，就表示已经成功启动了 ![kibana](https://www.twelvet.cn/assets/images/docs/238412f0-2d03-4515-9b29-71fbd62b1f02.png)
 
 ## 切换中文
 
@@ -241,6 +241,6 @@ output {
 ./logstash -f logstash-apache.conf
 ```
 
-- 通过`kibana`可视化检索各个服务日志数据 ![kibana](https://oscimg.oschina.net/oscnet/up-928d6f45a566fc7e6191db840a4b27de551.png)
+- 通过`kibana`可视化检索各个服务日志数据 ![kibana](https://www.twelvet.cn/assets/images/docs/8e192e75-c71e-4b48-80ed-3bc676cad84a.png)
 
  

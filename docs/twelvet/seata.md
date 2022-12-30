@@ -43,7 +43,7 @@ autoGroup-1:   架构
 
 Windows下载解压后（.zip），直接点击`bin/seata-server.bat`就可以了。（我使用的是1.4.0版本）
 
-![seata](https://oscimg.oschina.net/oscnet/up-859c18c316354a0ec69d8c6b765ef97b03b.png)
+![seata](https://www.twelvet.cn/assets/images/docs/47de4e15-2729-4854-b257-3b0b0c177537.png)
 
 ::: tip 提示
 
@@ -1150,7 +1150,7 @@ config {
 }
 ```
 
-由于使用`nacos`作为注册中心，所以`conf`目录下的`file.conf`无需理会。然后就可以直接启动`bin/seata-server.bat`，可以在`nacos`里看到一个名为`seata-server`的服务了。 ![seata](https://oscimg.oschina.net/oscnet/up-ab93c4f4de03cd9fa3dfcb7727531399c69.png)
+由于使用`nacos`作为注册中心，所以`conf`目录下的`file.conf`无需理会。然后就可以直接启动`bin/seata-server.bat`，可以在`nacos`里看到一个名为`seata-server`的服务了。 ![seata](https://www.twelvet.cn/assets/images/docs/c25fd916-9e62-48fc-8ce3-4b83111f7683.png)
 
 2、由于`seata`使用`mysql`作为`db`高可用数据库，故需要在`mysql`创建一个`ry-seata`库，并导入数据库脚本。
 
@@ -1375,7 +1375,7 @@ fi
 sh nacos-config.sh 127.0.0.1
 ```
 
-成功后`nacos`配置列表也能查询到相关配置 ![nacos](https://oscimg.oschina.net/oscnet/up-7e4bb45b376e7468057cd47af0d3e5d7f35.png)
+成功后`nacos`配置列表也能查询到相关配置 ![nacos](https://www.twelvet.cn/assets/images/docs/e2a8ed2b-961c-461b-9e9d-2e515b9fc0f3.png)
 
 6、修改服务配置文件
 
