@@ -1,12 +1,13 @@
 # twelvet
 
-[![AUR](https://img.shields.io/badge/license-MIT-blue)](https://github.com/twelvet-s/twelvet/blob/master/LICENSE)
+[![AUR](https://img.shields.io/github/license/twelvet-s/twelvet)](https://github.com/twelvet-s/twelvet/blob/master/LICENSE)
 [![](https://img.shields.io/badge/Author-TwelveT-orange.svg)](https://www.twelvet.cn)
-[![](https://img.shields.io/badge/version-1.1.0-success)](https://github.com/twelvet-s/twelvet)
+[![](https://img.shields.io/badge/version-2.7.5-success)](https://gitee.com/twelvet/twelvet)
 [![GitHub stars](https://img.shields.io/github/stars/twelvet-s/twelvet.svg?style=social&label=Stars)](https://github.com/twelvet-s/twelvet/stargazers)
 [![GitHub forks](https://img.shields.io/github/forks/twelvet-s/twelvet.svg?style=social&label=Fork)](https://github.com/twelvet-s/twelvet/network/members)
-[![star](https://github.com/twelvet-s/twelvet/badge/star.svg?theme=white)](https://github.com/twelvet-s/twelvet/stargazers)
-[![fork](https://github.com/twelvet-s/twelvet/badge/fork.svg?theme=white)](https://github.com/twelvet-s/twelvet/members)
+[![star](https://gitee.com/twelvet/twelvet/badge/star.svg?theme=white)](https://gitee.com/twelvet/twelvet/stargazers)
+[![fork](https://gitee.com/twelvet/twelvet/badge/fork.svg?theme=white)](https://gitee.com/twelvet/twelvet/members)
+
 
 一款基于Spring Cloud Alibaba的权限管理系统，集成市面上流行库，可以作用为快速开发的一个框架使用
 
