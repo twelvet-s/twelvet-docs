@@ -10,8 +10,8 @@ order: 3
 JDK >= 1.8 (推荐1.8版本)
 Mysql >= 5.7.0 (推荐5.7版本)
 Redis >= 3.0
-Maven >= 3.0
-Node >= 10
+Maven >= 3.5
+Node >= 12
 nacos >= 2.x.x
 sentinel >= 1.6.0
 ```
@@ -20,7 +20,7 @@ sentinel >= 1.6.0
 
 ### 后端运行
 
-1、前往`GitHub`下载页面[https://gitee.com/twelvet/twelvet](https://gitee.com/twelvet/twelvet)下载解压到工作目录
+1、前往`GitHub`下载页面[https://github.com/twelvet-s/twelvet](https://github.com/twelvet-s/twelvet)下载解压到工作目录
 
 2、导入到`Idea`，此处省略。
 
@@ -93,7 +93,7 @@ pnpm start
 建议使用`Git`克隆，因为克隆的方式可以和TwelveT随时保持更新同步。使用`Git`命令克隆
 
 ```text
-git clone https://gitee.com/twelvet/twelvet
+git clone https://github.com/twelvet-s/twelvet
 ```
 
 ::: tip 提示
@@ -152,7 +152,7 @@ pnpm build
 
 通常情况下 `dist` 文件夹的静态文件发布到你的 nginx 或者静态服务器即可，其中的 `index.html` 是后台服务的入口页面。
 
-详细的nginx配置请查看[官方文档](https://pro.ant.design/docs/deploy-cn#%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B9%B3%E5%8F%B0)
+详细的nginx配置请查看[官方文档](https://pro.ant.design/zh-CN/docs/deploy#%E9%83%A8%E7%BD%B2%E5%88%B0%E4%B8%8D%E5%90%8C%E7%9A%84%E5%B9%B3%E5%8F%B0)
 
 ## 常见问题
 
@@ -160,4 +160,4 @@ pnpm build
 2. 如果使用`Linux` 提示表不存在，设置大小写敏感配置在`/etc/my.cnf`添加`lower_case_table_names=1`，重启MYSQL服务
 3. 如果提示当前权限不足，无法写入文件请检查`twelvet-file-dev.yml`中的`path`路径或`logback.xml`中的`log.path`路径是否有可读可写操作权限
 
-如遇到无法解决的问题请到[https://gitee.com/twelvet/twelvet/issues](https://gitee.com/twelvet/twelvet/issues)反馈，会不定时进行解答。
+如遇到无法解决的问题请到[https://github.com/twelvet-s/twelvet/issues](https://github.com/twelvet-s/twelvet/issues)反馈，会不定时进行解答。

@@ -1417,7 +1417,7 @@ seata:
 
 7、测试验证
 
-[参考测试验证](https://doc.twelvet.cn/twelvet-cloud/cloud/seata.html#测试验证)
+[参考测试验证](https://doc.twelvet.cn/twelvet/cloud/seata.html#测试验证)
 
 ## 测试Feign服务调用
 
@@ -1990,7 +1990,7 @@ service.vgroupMapping.twelvet-file-group=default
 
 6、测试验证。
 
-[参考接口测试验证](https://doc.twelvet.cn/twelvet-cloud/cloud/seata.html#测试验证)
+[参考接口测试验证](https://doc.twelvet.cn/twelvet/cloud/seata.html#测试验证)
 
 - （订单成功：文件入库一起提交）
 - （订单失败：文件入库同时回滚）

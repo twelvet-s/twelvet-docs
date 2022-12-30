@@ -1078,7 +1078,7 @@ MessageUtils.message("user.login.submit")
 
 ### 前端国际化流程
 
-[参考Antd Pro](https://pro.ant.design/docs/i18n-cn#gatsby-focus-wrapper)
+[参考Antd Pro](https://pro.ant.design/zh-CN/docs/i18n)
 
 ## 新建服务
 
