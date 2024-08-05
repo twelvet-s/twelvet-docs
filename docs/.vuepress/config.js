@@ -4,7 +4,8 @@ const moment = require('moment');
 module.exports = {
     // theme: 'reco',
     title: 'TwelveT',
-    base: '/docs/',
+    // 基础路径
+    base: '/',
     plugins: {
         // 更新时间
         '@vuepress/last-updated': {
