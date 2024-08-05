@@ -7,11 +7,10 @@ order: 3
 
 TwelveT是一款基于Spring Cloud Alibaba、React、Antd的前后端分离微服务极速后台开发框架。
 
-- TwelveT 官网地址：[https://www.twelvet.cn/](https://www.twelvet.cn/)
-- TwelveT 在线文档：[https://www.twelvet.cn/docs](https://www.twelvet.cn/docs)
+- TwelveT 官网地址：[https://www.twelvet.cn/](https://twelvet.cn/)
+- TwelveT 在线文档：[https://www.twelvet.cn/docs](https://doc.twelvet.cn/)
 - TwelveT 源码下载：[https://github.com/twelvet-s/twelvet](https://github.com/twelvet-s/twelvet)
 - TwelveT 在线提问：[https://github.com/twelvet-s/twelvet/issues](https://github.com/twelvet-s/twelvet/issues)
-- QQ 群号： 985830229
 
 TwelveT 是一个 Java EE 企业级快速开发平台，基于经典技术组合（Spring Cloud Alibaba、React、Antd），内置模块如：部门管理、角色用户、菜单及按钮授权、数据权限、系统参数、日志管理、代码生成等。在线定时任务配置；支持集群，支持多数据源。
 
