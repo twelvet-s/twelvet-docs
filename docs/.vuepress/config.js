@@ -58,8 +58,7 @@ module.exports = {
                         items: [
                             { text: 'GitHub', link: 'https://github.com/twelvet-s/twelvet' },
                             { text: 'Gitee', link: 'https://gitee.com/twelvet/twelvet' },
-                            { text: '官网', link: 'https://www.twelvet.cn/' },
-                            { text: 'QQ群', link: 'https://jq.qq.com/?_wv=1027&k=cznM6Q00' },
+                            { text: '官网', link: 'https://twelvet.cn/' },
                         ]
                     },
                 ]
