@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /assets/logo.png
+heroImage: /assets/img/logo.png
 actionText: 快速上手 →
 actionLink: /twelvet/
 features:

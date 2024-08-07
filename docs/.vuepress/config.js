@@ -39,14 +39,15 @@ module.exports = {
         }
     },
     head: [
-        ['link', { rel: 'icon', href: '/assets/favicon.ico' }],
+        ['link', { rel: 'icon', href: '/assets/img/favicon.ico' }],
         ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
     ],
     description: '跟随 TwelveT 探索微服务开发',
     head: [
-        ['link', { rel: 'icon', href: "/assets/favicon.ico" }]
+        ['link', { rel: 'icon', href: "/assets/img/favicon.ico" }]
     ],
     themeConfig: {
+        logo: '/assets/img/logo.png',
         lastUpdated: 'Last Updated',
         nav: [
             { text: '微服务', link: '/twelvet/' },
